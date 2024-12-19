@@ -18,19 +18,19 @@ Markdown
 
 * **Secure User Authentication:** The website features a secure login system that protects against SQL injection by using prepared statements. User credentials are verified against the Employees table in the database. Passwords are securely hashed using password_verify() or are checked in plain text(which isn't secure) , as shown in the entry.php file:
 
-
 ```
 $query = "SELECT * FROM Employees WHERE (email = ? OR phone_number = ?)";
 $stmt = mysqli_prepare($connect, $query);  // Prepared statement
-```
-
 
 if (password_verify($enteredPassword, $hashedPasswordFromDatabase)|| $enteredPassword == $hashedPasswordFromDatabase) { // Secure password check
 // ... login logic ...
+```
 Use code with caution.
 PHP
-Role-Based Access Control: Different user roles (customer and Manager) have distinct permissions. Customers can view the menu, place orders, and manage their account information. Managers have additional privileges to modify database content, including the menu, user details, and other restaurant data. This is implemented using session variables in PHP:
 
+* **Role-Based Access Control:** Different user roles (customer and Manager) have distinct permissions. Customers can view the menu, place orders, and manage their account information. Managers have additional privileges to modify database content, including the menu, user details, and other restaurant data. This is implemented using session variables in PHP:
+
+```
 if ($row['role'] === 'Manager') {
     $_SESSION['role'] = 'Manager';
     header("location: menu.php"); // Redirect to manager page
@@ -38,17 +38,23 @@ if ($row['role'] === 'Manager') {
    $_SESSION['role'] = 'customer';
    header("location: index.php"); // Redirect to customer page
 }
+```
+
 Use code with caution.
 PHP
-AJAX-Powered Ordering System: The ordering system uses AJAX to provide a seamless user experience. Users can add dishes to their order dynamically without page reloads. The ord_script.js file demonstrates how AJAX requests are made to order_conection.php to fetch and display menu items:
 
+* **AJAX-Powered Ordering System:** The ordering system uses AJAX to provide a seamless user experience. Users can add dishes to their order dynamically without page reloads. The ord_script.js file demonstrates how AJAX requests are made to order_conection.php to fetch and display menu items:
+
+```
 fetch('order_conection.php')
     .then(response => response.json())
     .then(data => displayMenu(data))
     // ...
+```
 Use code with caution.
+
 JavaScript
-Order Management: Users can view their order, add or remove items, and see the total cost updated in real time. The ord_script.js file handles this functionality. The order is then sent to the server for processing using another AJAX call, enhancing the user experience with dynamic updates.
+* **Order Management:** Users can view their order, add or remove items, and see the total cost updated in real time. The ord_script.js file handles this functionality. The order is then sent to the server for processing using another AJAX call, enhancing the user experience with dynamic updates.
 
 Session Management: PHP sessions are used to store user information and maintain login status. Session security is enhanced by setting appropriate session parameters, like session.gc_probability, as seen in multiple PHP files.
 
