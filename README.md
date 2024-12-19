@@ -55,26 +55,15 @@ fetch('order_conection.php')
 * **Database Interaction:** The project uses PHP to interact with a database (presumably MySQL). Prepared statements are used to prevent SQL injection vulnerabilities, ensuring data security.
 
 Technologies Used
-HTML: Structure and content of the web pages.
-
-PHP: Server-side scripting for dynamic content generation, database interaction, and session management.
-
-CSS: Styling and visual presentation.
-
-JavaScript: Client-side scripting for interactivity, AJAX functionality, and DOM manipulation.
-
-AJAX: Asynchronous communication with the server for dynamic updates.
-
-Database (MySQL): Data storage and retrieval.
-
-Security
-SQL Injection Prevention: Prepared statements are used throughout the PHP code to protect against SQL injection.
-
-Future Enhancements (Suggestions)
-Input Validation: Implement more robust client-side and server-side input validation to prevent potential security issues and improve data integrity.
-
-Error Handling: Enhance error handling to provide more informative messages to users and log errors for debugging.
-
-Modern JavaScript Frameworks: Consider using a modern JavaScript framework (like React, Vue, or Angular) to improve front-end development and maintainability.
-
-This enhanced README provides a more comprehensive overview of your restaurant website project, highlighting its features, security measures, and technologies used. It also offers suggestions for future improvements. Remember to replace placeholder image paths and update the repository URL if needed.
+- HTML: Structure and content of the web pages.
+- PHP: Server-side scripting for dynamic content generation, database interaction, and session management.
+- CSS: Styling and visual presentation.
+- JavaScript: Client-side scripting for interactivity, AJAX functionality, and DOM manipulation.
+- AJAX: Asynchronous communication with the server for dynamic updates.
+- Database (MySQL): Data storage and retrieval.
+- Security
+- SQL Injection Prevention: Prepared statements are used throughout the PHP code to protect against SQL injection.
+- Future Enhancements (Suggestions)
+- Input Validation: Implement more robust client-side and server-side input validation to prevent potential security issues and improve data integrity.
+- Error Handling: Enhance error handling to provide more informative messages to users and log errors for debugging.
+- Modern JavaScript Frameworks: Consider using a modern JavaScript framework (like React, Vue, or Angular) to improve front-end development and maintainability.
