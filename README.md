@@ -40,7 +40,7 @@ if ($row['role'] === 'Manager') {
 
 * **AJAX-Powered Ordering System:** The ordering system uses AJAX to provide a seamless user experience. Users can add dishes to their order dynamically without page reloads. The ord_script.js file demonstrates how AJAX requests are made to order_conection.php to fetch and display menu items:
 
-```php
+```js
 fetch('order_conection.php')
     .then(response => response.json())
     .then(data => displayMenu(data))
