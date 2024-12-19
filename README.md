@@ -15,7 +15,8 @@ This project is a dynamic restaurant website built using HTML, PHP, CSS, and Jav
    $sql .= " LIMIT ? OFFSET ?"; // Add limit and offset for pagination
 Use code with caution.
 Markdown
-Secure User Authentication: The website features a secure login system that protects against SQL injection by using prepared statements. User credentials are verified against the Employees table in the database. Passwords are securely hashed using password_verify() or are checked in plain text(which isn't secure) , as shown in the entry.php file:
+
+* ** Secure User Authentication:** The website features a secure login system that protects against SQL injection by using prepared statements. User credentials are verified against the Employees table in the database. Passwords are securely hashed using password_verify() or are checked in plain text(which isn't secure) , as shown in the entry.php file:
 
 
 ```
