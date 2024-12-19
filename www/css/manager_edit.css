@@ -1,0 +1,191 @@
+
+/*/*/ *@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Dirt&display=swap');
+
+body {
+    /*background-image: url(/images/background.jpg);*/
+    /*background-color: #EEE2DC; */
+    background-color: white-space: nowrap;
+    background-repeat: repeat;
+}
+
+main {
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    height: 80px;
+    background-color: #00FFFF;
+    position: relative;
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 65px;
+    padding-left: 120px;
+    border: 10px double black;
+}
+
+
+.shadowbox {
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-color: #00FFFF;
+    /*background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);*/
+}
+
+article {
+    background-color: #EDC7B7;
+    text-emphasis: center;
+    padding: 15px;
+    border: 1px solid;
+}
+
+#bd {
+    text-align: center;
+}
+
+.p1 {
+    text-align: center;
+    padding: 20px;
+    margin: 12px;
+    font-family: Verdana;
+    font-size: 16pt;
+}
+
+#index {
+    width: 45.3%;
+    position: absolute;
+    top: 25%;
+}
+
+#p2 {
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: Verdana;
+    font-size: 16pt;
+}
+
+#f1 {
+    width: 20%;
+}
+
+#f2 {
+    left: 20%;
+    font-size: 200%;
+    font-family: Verdana;
+}
+
+#f3 {
+    width: 5%;
+    left: 1%;
+    position: absolute;
+}
+
+footer {
+    margin: 10px;
+    min-height: 100px;
+    text-align: center;
+    padding-top: auto;
+    background-color: #BAB2B5;
+    color: white;
+    border: 1px solid black;
+}
+
+#f3:hover {
+    width: 7%;
+    transition: 2s;
+}
+
+
+input[type=button], input[type=submit]:hover {
+    background-color: #B22222;
+    transition-duration: 0.5s;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+    td:hover {
+        background-color: #FFF8DC;
+        transition-duration: 0.5s;
+    }
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+.shadowbox {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#f2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type=password], input[type=datetime-local] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pagination {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media print {
+    body {
+        font-size: 12pt; /* Adjust font size for print */
+    }
+
+    main {
+        max-width: none; /* Remove max-width for printing */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: none; /* Hide header when printing */
+    }
+
+    th, td {
+        border: 1px solid #000; /* Make borders more visible in print */
+    }
+
+    .pagination {
+        display: none; /* Hide pagination buttons when printing */
+    }
+}

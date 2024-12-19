@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['validateemail_0',['validateEmail',['../namespaceexample.html#a7dd20da0d428d94fa4dad40bf7e90887',1,'example\validateEmail()'],['../employees_8php.html#a7dd20da0d428d94fa4dad40bf7e90887',1,'validateEmail($email):&#160;employees.php'],['../registration_8php.html#a7dd20da0d428d94fa4dad40bf7e90887',1,'validateEmail($email):&#160;registration.php']]],
+  ['validatepassword_1',['validatePassword',['../namespaceexample.html#a179b92fbda1d7688a44cdcebf0b50e3f',1,'example\validatePassword()'],['../employees_8php.html#a179b92fbda1d7688a44cdcebf0b50e3f',1,'validatePassword($password):&#160;employees.php'],['../registration_8php.html#a179b92fbda1d7688a44cdcebf0b50e3f',1,'validatePassword($password):&#160;registration.php']]],
+  ['validatepasswordconfirmation_2',['validatePasswordConfirmation',['../namespaceexample.html#a0bdc16ed6712a0c9efb7d519594f6c84',1,'example\validatePasswordConfirmation()'],['../registration_8php.html#a0bdc16ed6712a0c9efb7d519594f6c84',1,'validatePasswordConfirmation():&#160;registration.php']]],
+  ['validatephonenumber_3',['validatePhoneNumber',['../namespaceexample.html#a76ffffd080139a25441f393a87e0e0e7',1,'example\validatePhoneNumber()'],['../employees_8php.html#a1bbcb7c0f43226703b5affb6a6e5fb82',1,'validatePhoneNumber($phoneNumber):&#160;employees.php'],['../registration_8php.html#a76ffffd080139a25441f393a87e0e0e7',1,'validatePhoneNumber($phoneNumber, $email):&#160;registration.php']]]
+];

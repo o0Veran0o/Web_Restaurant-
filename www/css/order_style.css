@@ -1,0 +1,108 @@
+        body {
+         background-color: white-space: nowrap;
+    background-repeat: repeat;
+        }
+
+        .menu-item {
+            background-color: #EDC7B7;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+    font-family: 'Rubik Dirt', cursive;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+#f3 {
+    width: 5%;
+    left: 1%;
+    position: fixed;
+}
+
+    #f3:hover {
+        width: 7%;
+        transition: 2s;
+    }
+
+
+        header {
+    height: 80px;
+    background-color: #00FFFF;
+    position: relative;
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+    font-size: 65px;
+    padding-left: 120px;
+    border: 10px double black;
+}
+
+main {
+
+    width: 960px;
+    margin: auto;
+}
+
+.order_style{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #FFFFF0;
+}
+ .sum{
+      background-color: #E0FFFF;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+    font-family: 'Rubik Dirt', cursive;
+
+    }
+.order_item_style{
+  background-color: #E0FFFF;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+footer {
+    min-height: 100px;
+    text-align: center;
+    padding-top: auto;
+    background-color: #BAB2B5;
+    color: white;
+    border: 1px solid black;
+}
+
+@media print {
+    body {
+        font-size: 12pt; /* Adjust font size for print */
+    }
+
+    main {
+        max-width: none; /* Remove max-width for printing */
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer {
+        display: none; /* Hide header and footer when printing */
+    }
+
+    .order_style {
+        margin-top: 20px; /* Adjust margin for better spacing when printing */
+    }
+
+    .pagination {
+        display: none; /* Hide pagination buttons when printing */
+    }
+
+    #placeOrderBtn {
+        display: none; /* Hide place order button when printing */
+    }
