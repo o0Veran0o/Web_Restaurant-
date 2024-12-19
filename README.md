@@ -18,7 +18,7 @@ This project is a dynamic restaurant website built using HTML, PHP, CSS, and Jav
 
 * **Secure User Authentication:** The website features a secure login system that protects against SQL injection by using prepared statements. User credentials are verified against the Employees table in the database. Passwords are securely hashed using password_verify() or are checked in plain text(which isn't secure) , as shown in the entry.php file:
 
-```
+```php
 $query = "SELECT * FROM Employees WHERE (email = ? OR phone_number = ?)";
 $stmt = mysqli_prepare($connect, $query);  // Prepared statement
 
@@ -28,7 +28,7 @@ if (password_verify($enteredPassword, $hashedPasswordFromDatabase)|| $enteredPas
 
 * **Role-Based Access Control:** Different user roles (customer and Manager) have distinct permissions. Customers can view the menu, place orders, and manage their account information. Managers have additional privileges to modify database content, including the menu, user details, and other restaurant data. This is implemented using session variables in PHP:
 
-```
+```php
 if ($row['role'] === 'Manager') {
     $_SESSION['role'] = 'Manager';
     header("location: menu.php"); // Redirect to manager page
@@ -40,7 +40,7 @@ if ($row['role'] === 'Manager') {
 
 * **AJAX-Powered Ordering System:** The ordering system uses AJAX to provide a seamless user experience. Users can add dishes to their order dynamically without page reloads. The ord_script.js file demonstrates how AJAX requests are made to order_conection.php to fetch and display menu items:
 
-```
+```php
 fetch('order_conection.php')
     .then(response => response.json())
     .then(data => displayMenu(data))
